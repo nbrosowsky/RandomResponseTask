@@ -1,0 +1,325 @@
+/* ----------------------------------------------------------------
+  Typography
+-----------------------------------------------------------------*/
+
+body {
+    font-family: arial;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* ----------------------------------------------------------------
+  General Helper classes
+-----------------------------------------------------------------*/
+
+.initHidden {
+    display: none;
+}
+
+.noMargin {
+    margin: 0 !important;
+}
+
+.absolute-center {
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+.flexSpaceBetween {
+    display: flex;
+    align-content: space-between;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexRow {
+    display: -webkit-flex;
+    /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row;
+    /* Safari */
+    -webkit-flex-direction: row;
+    align-items: center;
+}
+
+.flexColumn {
+    display: -webkit-flex;
+    /* Safari 6.1+ */
+    display: flex;
+    flex-direction: column;
+    /* Safari */
+    -webkit-flex-direction: column;
+    align-items: center;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.bottomRight {
+    position: absolute;
+    right: 20px;
+    bottom: 0
+}
+
+.bottomLeft {
+    position: absolute;
+    left: 20px;
+    bottom: 0
+}
+
+.width100 {
+    width: 100%;
+}
+
+.margin15 {
+    margin: 15%;
+}
+
+
+.textInput {
+    font-size: 15px;
+    width: 80%;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.top-left {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    margin: 20px;
+    font-size: 2em;
+    line-height: .5rem
+}
+
+.score {
+    font-size: 72px;
+    line-height: .5rem
+}
+
+/* ----------------------------------------------------------------
+  Task Content
+-----------------------------------------------------------------*/
+input[type=radio] {
+    margin-left: 20px;
+}
+
+.question-header {
+    margin-bottom: 0;
+    font-size: 1.2em
+}
+ 
+.content-display {
+    width: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.standard-display {
+    width: 750px;
+    padding: 20px;
+    position: relative;
+    min-height: 600px;
+    margin: auto;
+    /*    border: 1px solid black;*/
+}
+
+.container {
+    width: 75%;
+    min-width: 750px;
+    height: 75%;
+    min-height: 750px;
+}
+
+.face-container {
+    width: 100px;
+    margin: 3.57px
+}
+
+
+
+.task-3-choose {
+    text-align: center;
+    width: 40%;
+    font-size: 40px;
+
+}
+
+.task-3-choices {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.task-3-choices:hover {
+    cursor: pointer;
+    background: #d3d3d3;
+}
+
+.task-3-examples {
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.task-3-examples-header {
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.task-3-examples:hover {
+    cursor: pointer;
+    background: #d3d3d3;
+}
+
+.rate-container {
+    width: 10%;
+    margin: 5px
+}
+
+
+
+.inner-container {
+    margin: 2%;
+    width: 100%;
+}
+
+.button-blue {
+    font-size: 15px;
+    margin: 25px auto;
+    padding: 10px 30px 13px 30px;
+    text-decoration: none;
+    color: white;
+    border: 2px #06c solid;
+    outline: none;
+    background: #06c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-green {
+    font-size: 15px;
+    margin: 25px auto;
+    padding: 10px 30px 13px 30px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px green solid;
+    background: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.button-blue:hover {
+    cursor: pointer;
+    color: #06c;
+    background: #fff;
+    border: 2px #06c solid;
+}
+
+.button-green:hover {
+    cursor: pointer;
+    color: green;
+    background: white;
+    border: 2px green solid;
+    outline: none;
+}
+
+.button-green:disabled,
+.button-green[disabled] {
+    border: 2px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.button-green:disabled:hover,
+.button-green[disabled]:hover {
+    cursor: default;
+}
+
+
+
+/* ----------------------------------------------------------------
+  Loading
+-----------------------------------------------------------------*/
+
+@keyframes loading{
+    100% {
+        transform: rotatez(360deg);
+    }
+}
+
+.load-div {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.load::before {
+    content: "";
+    color: white;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-color: #039BE5 #039BE5 transparent transparent;
+    animation: loading .6s infinite;
+}
+
+.loader{
+  width:100px;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:10px 20px;
+}

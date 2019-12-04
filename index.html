@@ -1,0 +1,60 @@
+<!--
+author: Nicholaus P. Brosowsky <nbrosowsky@gmail.com>
+link: nbrosowsky.github.io
+-->
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="N.P. Brosowsky" content="Emotions Task" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link rel="stylesheet" href="css/task.css" type="text/css" />
+
+
+
+    <!-- Document Title
+	============================================= -->
+    <title>Random Response Task</title>
+
+</head>
+
+<body>
+
+    <!-- page load spinner -->
+    <div id="load-div" class="standard-display absolute-center">
+        <div class="load loader"></div>
+    </div>
+
+    <!-- Load screen -->
+    <!-- If images have not loaded by task 2, the loading screen is displayed -->
+    <div id="images-loading" class="standard-display absolute-center" style="display: none">
+        <div style="width:80%" class="flexColum">
+            <p>Please wait while some images finish loading...</p>
+            <p id="progress"></p>
+        </div>
+    </div>
+
+    <!-- Main Content
+		============================================= -->
+    <div id="main-display" class="content-display absolute-center">
+        
+    
+    </div>
+
+    <!--- Javascript on page load
+	============================================= -->
+    <script type="text/javascript" src="js/common/generic.js"></script>
+
+
+    <script type="text/javascript" src="task.js"></script>
+    <script>landing.create()</script>
+
+</body>
+
+</html>
